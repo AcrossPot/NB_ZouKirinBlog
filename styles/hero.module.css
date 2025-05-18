@@ -1,0 +1,34 @@
+/* 全体反映用。 */
+/* グローバルモジュールで宣言した変数はvar()で指定する */
+
+.flexContainer {
+  /* Unknown property `composes`はVScodeが認識していないだけ。スルー可 */
+  composes: sideBySideCenter from "styles/utils.module.css";
+}
+
+.text {
+  padding-top: calc(var(--display) * 0.5);
+  padding-bottom: calc(var(--display) * 0.7);
+}
+
+.title {
+  font-size: var(--display);
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.subtitle {
+  font-size: var(--small-heading2);
+}
+
+/* image */
+/* 親要素のサイズ指定を打ち消す用 */
+.image {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .image {
+        width: 50%;
+    }
+}

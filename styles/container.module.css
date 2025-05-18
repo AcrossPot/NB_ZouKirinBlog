@@ -1,0 +1,17 @@
+/*  横幅指定するためのもの。
+ Container　で囲ったものを指定とする */
+
+ /* header.jsとfooter.jsに渡す設定 　⇐　container.js　⇐　★container.module.css(横幅指定)*/
+ /* index.js about.js blog/index.jsにも渡す */
+
+.default {
+    width: 92%;
+    max-width: 1125px;
+    margin: 0 auto;
+}
+
+/* 用途⇛　三項演算子　large属性が記載されている ? TRUE処理　：　FALSE処理 */
+.large {
+    composes: default;
+    max-width: 1280px;
+}

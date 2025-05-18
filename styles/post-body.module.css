@@ -1,0 +1,32 @@
+/* 本文レイアウト用 */
+/* post-body.jsで使う */
+
+/* About.js ⇐ post-body.js ⇐ ★post-body.module.css */
+
+.stack > * + * {
+    /* styles.stackの子要素の上マージンを指定する */
+    margin-top: var(--stack-space, 1.5em);
+}
+
+.stack h2,
+.stack h3 {
+    /* 見出しの上の間隔を大きくする */
+    --stack-space: 2em;
+}
+
+.stack h2 + * ,
+.stack h3 + * {
+    /* 見出しの下の間隔は小さくする設定 */
+    --stack-space: 0.8em;
+}
+
+.stack p {
+    /* 読みやすい行間設定 */
+    line-height: 1.7;
+}
+
+.stack ul {
+    /* ulタグリストは本文中で使うかもなので、リセットCSSを無効化し、ブラウザ標準スタイルを使用させる */
+    padding: revert;
+    list-style: revert;
+}

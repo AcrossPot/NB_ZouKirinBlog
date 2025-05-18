@@ -1,0 +1,6 @@
+.list {
+    display: flex;
+    gap: 1.5em;
+    /* 第１引数で変数名、第２引数で値 */
+    font-size: var(--icon-size, 24px);
+}

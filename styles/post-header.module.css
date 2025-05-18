@@ -1,0 +1,30 @@
+/* 記事のヘッダーコンポーネント用 */
+
+.stack {
+    /* ヘッダーの上下 */
+    padding: var(--space-sm) 0;    
+}
+
+.stack > * + * {
+    /* 直近の子要素（１つめ以外）の間隔を1em指定 */
+    margin-top: var(--stack-space, 1em);
+}
+
+.subtitle {
+    /* サブタイトル */
+    font-size: var(--small-heading2);
+    font-weight: 700;
+}
+
+.title {
+    /* タイトルのh1サイズを小さく調整 */
+    --stack-space: 0.2em;
+}
+
+.publish {
+    /* 投稿日の設定 */
+    display: flex;
+    gap: 0.5em;
+    color: var(--gray-50);
+    font-size: var(--small-heading3);
+}

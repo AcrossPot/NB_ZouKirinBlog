@@ -1,0 +1,18 @@
+/* ページネーション　＜前の記事へ　次の記事へ＞　ボタン制御 */
+.flexContainer {
+    composes: spaceBetween from 'styles/utils.module.css';
+    margin: var(--space-lg) 0;
+    gap: 1em;
+}
+
+/* 次の記事へ　＞　ボタンを右端へ */
+.next {
+    margin-left: auto;
+}
+
+/* 各リンクのアイコンとテキストを縦方向センタリング余白は0.5em */
+.iconText {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}

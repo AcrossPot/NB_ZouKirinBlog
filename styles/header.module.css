@@ -1,0 +1,5 @@
+/* header.js ⇐ header.modules(クラス.flexContainer宣言) ⇐ utils.modules(レイアウト) */
+.flexContainer {
+  /* Unknown property `composes`はVScodeが認識していないだけ。スルー可 */
+  composes: spaceBetween from "styles/utils.module.css";
+}

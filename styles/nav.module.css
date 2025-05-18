@@ -1,0 +1,135 @@
+/* ナビゲーションメニューを一括で指定させる */
+
+/* デスクトップ用 */
+@media (min-width: 768px) {
+  /* デスクトップではボタンを非表示にする */
+  .btn {
+    display: none;
+  }
+
+  .list {
+    display: flex;
+    gap: 2em;
+  }
+}
+
+/* モバイル用 */
+@media (max-width: 767px) {
+  /* ボタン */
+  .btn {
+    /* ボタンの標準のスタイルをリセットしてサイズを指定する */
+    all: unset;
+    outline: revert;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+
+    position: relative;
+    /* ボタンはオーバーレイの上に重ねる */
+    z-index: 200;
+  }
+
+  .close .btn {
+    color: var(--gray-75);
+  }
+
+  .open .btn {
+    color: var(--white);
+  }
+
+
+/* --------------------------------------- */
+  /* ハンバーガーをスタイルで作成する */
+
+.btn {
+  /* 3本ラインをセンターで縦に重ねる */
+  display: grid;
+  place-items: center;
+}
+.btn::before,
+.btn::after,
+.btn .bar {
+  grid-area: 1 / 1;
+  /* 線の長さ太さ設定 */
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2.5px;
+  background-color: currentColor;
+  transition: transform 0.5s;
+}
+.btn .bar{
+  /* 20~24px */
+  width: 24px;
+}
+
+/* メニューが閉じたときに２本のバーを上下に移動させる */
+.close .btn::before {
+  transform: translateY(-8px);
+}
+.close .btn::after {
+  transform: translateY(8px);
+}
+
+/* メニューが開いたときは２本のバーを回転させて　✕　閉じるマークにする */
+/* ３本目のバーは非表示にする */
+.open .btn::before {
+  transform: rotate(45deg);
+}
+.open .btn::after {
+  transform: rotate(-45deg);
+}
+.open .btn .bar {
+  transform: scale(0);
+}
+/* --------------------------------------- */
+
+  /* オーバーレイメニュー */
+  .list {
+    position: fixed;
+    
+    /* 位置を決める。左辺を-100%(⇛方向）右辺を100％(⇛方向)上下は動かさず */
+    inset: 0 -100% 0 100%;
+
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--white);
+    transition: transform 0.4s;
+  }
+
+  .open .list {
+    /* 上記insetで決めた位置(画面⇛外側）から、-100%（⇐方向へ移動させる） */
+    transform: translateX(-100%);
+  }
+
+  /* メニュー(オーバーレイ内の配置) */
+  .list {
+    display: grid;
+    gap: 40px;
+    place-content: center;
+    text-align: center;
+  }
+
+}
+
+
+/* ホバーできる環境用(デスクトップ) */
+@media (hover: hover) {
+  .list a:hover {
+    /* ホバー色をアクセントカラー指定 */
+    color: var(--accent);
+  }
+}
+
+/* タッチパネル、ホバー不可用 */
+@media (hover: none) {
+  .list a {
+    /* transparentはタップ時のデバイス標準カラー */
+    -webkit-tap-highlight-color: transparent;
+  }
+  .list a:active {
+    /* タップ時にアクセントカラーになる */
+    color: var(--accent);
+  }
+}

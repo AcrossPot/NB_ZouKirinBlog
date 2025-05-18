@@ -1,0 +1,40 @@
+/* レイアウトを共有で制御する */
+
+/* 両端揃え用 */
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 横並び(デフォルト) */
+.sideBySide {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .sideBySide {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* 横並び(センタリング) */
+
+/* ヘッサーmodule.css使用 */
+/* フッターmodule.css使用 */
+/* hero.module.css使用 */
+.sideBySideCenter {
+  /* Unknown property `composes`はVScodeが認識していないだけ。スルー可 */
+  composes: sideBySide;
+
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sydeBySideCenter {
+    text-align: left;
+  }
+}
