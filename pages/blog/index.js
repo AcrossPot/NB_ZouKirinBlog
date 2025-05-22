@@ -27,9 +27,9 @@ import { getImageBuffer } from 'lib/getImageBuffer'
 export default function Blog({ posts }) {
     return(
         <Container>
-            <Meta pageTitle="ページタイトル" />
+            <Meta pageTitle="たびにっき" />
 
-            <Hero title="Blogページ" subtitle="このページのサブタイトル" />
+            <Hero title="たびにっき" subtitle="たくさんおでかけしたぞう" />
 
             {/* 全ての記事 */}
             <Posts posts={posts} />

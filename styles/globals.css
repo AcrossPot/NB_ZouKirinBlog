@@ -4,11 +4,14 @@
   /* 色 */
   --white: #fff;
   --black: #222;
-  --accent: #0d87e0;
-  --gray-10: #eee;
+  /* --accent: #0d87e0; */
+  --accent: #FFC6C6;
+  /* 10はeee */
+  --gray-10: #00b6b2;
   --gray-25: #aaa;
   --gray-50: #707070;
-  --gray-75: #444444;
+  /* 75は#444 */
+  --gray-75: #35eee9;
 
   /* タイポグラフィ（フォントサイズ） */
   --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem); /* 本文用　16-18px*/
@@ -17,9 +20,10 @@
     1.83rem + 11.34vw,
     10rem
   ); /* ディスプレイ用Hero用　72-160 */
-  --heading1: clamp(2rem, 1.3rem + 3vw, 4rem); /* 見出し１　32-64px*/
+  --heading1: clamp(2rem, 1.3rem + 3vw, 4rem); /* 見出し１　32-64px */
   --heading2: calc(var(--body) * 1.5); /* 見出し２　24-27px */
   --heading3: calc(var(--body) * 1.2); /*　見出し３　19.2-21.6px　*/
+  --heading4: clamp(3rem, 2rem + 4vw, 6rem);
   --small-heading2: clamp(
     0.875rem,
     4vw - 1rem,
@@ -53,6 +57,7 @@ body {
     sans-serif;
   font-size: var(--body);
 }
+
 
 h1 {
   font-size: var(--heading1);
@@ -100,3 +105,5 @@ a {
   /* 下線を削除 */
   text-decoration: none;
 }
+
+

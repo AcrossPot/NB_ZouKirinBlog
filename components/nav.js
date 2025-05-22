@@ -59,19 +59,19 @@ export default function Nav() {
         <li>
           <Link href="/">
             {/* 別ページに飛ぶ前にcloseNavでメニューを閉じるステータスを付与 */}
-            <a onClick={closeNav}>HOME</a>
+            <a onClick={closeNav}>トップページ</a>
           </Link>
         </li>
 
         <li>
           <Link href="/about">
-            <a onClick={closeNav}>About</a>
+            <a onClick={closeNav}>ゾウキリンのひみつのへや</a>
           </Link>
         </li>
 
         <li>
           <Link href="/blog">
-            <a onClick={closeNav}>Blog</a>
+            <a onClick={closeNav}>たびにっき</a>
           </Link>
         </li>
       </ul>

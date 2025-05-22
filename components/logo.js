@@ -7,7 +7,7 @@ export default function Logo({ boxOn = false }) {
   return (
     <Link href="/">
       {/* boxOn属性の有無で文字スタイルを変更する */}
-      <a className={boxOn ? styles.box : styles.basic}>サイト名Pot-Page</a>
+      <a className={boxOn ? styles.box : styles.basic}>ゾウキリンの<ruby>Blog<rt>ぶろぐ</rt></ruby></a>
     </Link>
   );
 }

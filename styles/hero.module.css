@@ -12,13 +12,27 @@
 }
 
 .title {
-  font-size: var(--display);
+  /* font-size: var(--display); */
+  font-size: var(--heading4);
   font-weight: 900;
   letter-spacing: 0.15em;
+
+    /* ロゴのフォント */
+  font-family: "Darumadrop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* font-size:large; */
 }
 
 .subtitle {
   font-size: var(--small-heading2);
+
+  /* ヨモギフォント */
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+
 }
 
 /* image */

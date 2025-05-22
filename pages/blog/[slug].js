@@ -60,7 +60,7 @@ export default function Post( {
 
         <article>
             {/* 記事タイトル */}
-            <PostHeader title={title} subtitle="Blog Article" publish={publish} />
+            <PostHeader title={title} subtitle="きょうのにっき" publish={publish} />
 
             {/* アイキャッチ画像 */}
             <figure>

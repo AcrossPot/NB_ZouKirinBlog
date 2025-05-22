@@ -21,12 +21,25 @@
 }
 
 .stack p {
+    /* 日記本文 */
+
     /* 読みやすい行間設定 */
     line-height: 1.7;
+
+  /* ヨモギフォント */
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+
 }
 
 .stack ul {
     /* ulタグリストは本文中で使うかもなので、リセットCSSを無効化し、ブラウザ標準スタイルを使用させる */
     padding: revert;
     list-style: revert;
+}
+
+.figure ZouImgSize {
+    width:255px;
 }

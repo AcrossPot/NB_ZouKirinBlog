@@ -5,9 +5,14 @@ import Social from 'components/social'
 export default function Contact() {
     return (
         <div className={styles.stack}>
-            <h3 className={styles.heading}>Contact</h3>
+            <h3 className={styles.heading}
+                style={{fontFamily: '"Yomogi", cursive',fontWeight: 'bold',fontSize: '1.4em',color: '#6A5329' }}
+            >おてがみ</h3>
+            <address>zoukirin@niiza.otegami..jpp</address>
+            <h3 className={styles.heading}
+                style={{fontFamily: '"Yomogi", cursive',fontWeight: 'bold',fontSize: '1.4em',color: '#6A5329' }}
+            >えすえぬえす</h3>
             <Social iconSize="30px" />
-            <address>メールアドレス@example.mailaddress.jp</address>
         </div>
     )
 }

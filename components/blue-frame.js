@@ -11,7 +11,9 @@ export default function BlueFrame({ children }) {
 
             <Link href="/blog">
                 {/* 記事一覧ボタン */}
-                <a className={styles.sideBtn}>Recent Blog Posts</a>
+                <a className={styles.sideBtn} 
+                    style={{fontFamily: '"Yomogi", cursive',fontWeight: 'bold',fontSize: '1.4em',color: '#6A5329' }}>ゾウキリンのたびにっき</a>
+                {/* style={{ fontFamily: '"Yomogi", cursive',fontWeight: 'bold',fontSize: '1.4em',color: '#6A5329'}}> */}
             </Link>
         </div>
     )

@@ -22,15 +22,19 @@ import { getImageBuffer } from 'lib/getImageBuffer'
 import { eyecatchLocal } from 'lib/constants'
 
 
+
 //================================================================
 //imageOn属性が存在すると、TRUEになる。
 export default function Home({ posts }) {
     return(
         <Container>
             <Meta />
-            <Hero title="CUBE" subtitle="トップページサブタイトル" imageOn />
+            <Hero title="ゾウキリンのBlog" subtitle="埼玉県新座市のゆるきゃら非公式紹介ブログ" imageOn />
+
+                                    
+            
             <Posts posts={posts} />
-            <Pagination nextUrl="/blog" nextText="More Posts" />
+            <Pagination nextUrl="/blog" nextText="もっとみる" />
         </Container>
     )
 }

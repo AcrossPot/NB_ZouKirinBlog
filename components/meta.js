@@ -58,6 +58,18 @@ export default function Meta( { pageTitle, pageDesc ,pageImg, pageImgW, pageImgH
             <meta property="og:image:height" content={imgH} />
             <meta name="twitter:card" content="summary_large_image" />
 
+            {/* GoogleFont Darumadrop One */}
+            <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+            <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet"></link>
+
+            {/* GoogleFont Yomogi */}
+            {/* <link rel="preconnect" href="https://fonts.googleapis.com"></link> */}
+            {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link> */}
+            <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet"></link>
+
+            
+
         </Head>
     )
 }

@@ -8,9 +8,11 @@ import { faFolderOpen } from '@fortawesome/free-regular-svg-icons'
 export default function PostCategories({ categories }) {
     return (
         <div className={styles.flexContainer}>
+            {/* カテゴリーフォルダーを表示させる */}
             <h3 className={styles.heading}>
                 <FontAwesomeIcon icon={faFolderOpen} />
-                <span className="sr-only">Categories</span>
+                {/* <span className="sr-only">カテゴリー※非表示で読み上げのみ</span> */}
+                <span>　カテゴリー</span>
             </h3>
         
             <ul className={styles.list}>

@@ -7,16 +7,16 @@ import styles from "styles/hero.module.css";
 
 // バナー画像をインポート
 import Image from 'next/image'
-import pot from 'images/topimg.jpg'
+import pot from 'images/topimg.png'
 //================================================================================
 
 //-----------------------------------------------------------------
 // // イメージローダーを変更したのでコメントアウトする
 // ↑動かなくなるので未実装とする
-// // import pot from 'images/topimg.jpg'
+// // import pot from 'images/topimg.png'
 // // イメージローダー変更の代わり
 // const pot = {
-//   src: 'https://images.microcms-assets.io/assets/f74dc956003c4565a8ab3ed700c6435f/b4800f006d7b4d869f9fdbfbb822488e/topimg.jpg',
+//   src: 'https://images.microcms-assets.io/assets/f74dc956003c4565a8ab3ed700c6435f/b4800f006d7b4d869f9fdbfbb822488e/topimg.png',
 //   height: 1300,
 //   width: 1500,
 //   blurDataURL: 'data:image/jpeg;base64,',

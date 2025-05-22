@@ -2,7 +2,9 @@
 /* ここだけモバイル仕様を基準*/
 .frame {
     padding: var(--space-md) 0;
-    background-color: #4c86c1;
+    /* background-color: #4c86c1; */
+    /* アクセントカラーに変更 */
+    background-color: #FFC6C6;
 }
 
 .frame > :first-child {
@@ -13,6 +15,7 @@
 
 .sideBtn{
     display: none;
+    
 }
 
 /* 以下デスクトップ仕様 */

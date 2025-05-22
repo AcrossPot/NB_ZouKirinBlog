@@ -2,13 +2,51 @@
 
 /* ヘッダー全域のラッピング設定 */
 .wrapper {
-  padding: var(--space-xl) 0;
+
   background-color: var(--gray-10);
+
+  /* コピーライト追加、フッター幅調整のためにコメント化した */
+  /* padding: var(--space-xl) 0; */
+
+
+
+  display: flex; /* Flexboxコンテナにする */
+  flex-direction: column; /* 子要素を縦方向に並べる */
+  justify-content: space-between; /* 子要素の間に均等なスペースを確保。これによりcopyrightContainerが下に押しやられます */
+
+  /* 子要素の上下のpaddingでサイズ調整をする。 */
+  min-height: auto; /* フッターの最小の高さを設定する（コンテンツが少ない場合でもコピーライトが下端にくるように） */
 }
+
 
 .flexContainer {
   /* Unknown property `composes`はVScodeが認識していないだけ。スルー可 */
   composes: sideBySideCenter from "styles/utils.module.css";
 
   gap: 2em;
+
+  /* フッター上下幅をここで調整する */
+  padding: 60px 0; /* 下のパディングはcopyrightContainerでも調整できるメモ */
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 以下でcopyrightContainerが下端になる */
+  flex-grow: 1; /* 残りのスペースを全てこの要素が占めるようにする */
+}
+
+
+
+
+.copyrightContainer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.85em;
+  color: #6A5329;
+  background-color: #e0e0e0;
+  border-top: 1px solid #ddd;
+
+  /* 以下使用しない */
+  /* margin-top: auto; は flex-direction: column の場合に下寄せに有効ですが、*/
+  /* justify-content: space-between; と flex-grow: 1; の組み合わせで自動的に下寄せになります */
 }

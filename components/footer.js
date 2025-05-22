@@ -16,9 +16,21 @@ export default function Footer() {
         <Container>
             <div className={styles.flexContainer}>
                 <Logo />
-                <Social />
+                <div>
+                  <Social />
+                  <br />
+                  <address>zoukirin@niiza.otegami..jpp</address>
+                </div>
+                
             </div>
+            
         </Container>
+      {/* コピーライト */}
+      <div className={styles.copyrightContainer}>
+            &copy; 2025 ZouKirinBlog. All rights reserved.
+            {/* &copy; {new Date().getFullYear()} ZouKirinBlog. All rights reserved. */}
+      </div>
+
     </footer>
   );
 }

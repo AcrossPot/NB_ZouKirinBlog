@@ -1,4 +1,4 @@
-// 記事一覧作成用
+//  /blog 記事一覧 作成用
 //gridContainerでレイアウト調整を行う
 
 import styles from 'styles/posts.module.css'
@@ -15,6 +15,7 @@ export default function Posts({ posts }) {
                     <Link href={`/blog/${slug}`}>
                         <a>
                             <figure>
+                                {/* 記事一覧ページの画像 */}
                                 <Image 
                                     src={eyecatch.url}
                                     alt=""
@@ -27,7 +28,8 @@ export default function Posts({ posts }) {
                                     blurDataURL={eyecatch.blurDataURL}
                                 />
                             </figure>
-                            <h2>{title}</h2>
+                            {/* 記事一覧ページのタイトル */}
+                            <h2 style={{ fontFamily: '"Yomogi", cursive',fontWeight: 'bold',fontSize: '1.4em',color: '#6A5329' }}>{title}</h2>
                         </a>
                     </Link>
                 </article>

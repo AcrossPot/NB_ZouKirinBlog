@@ -14,11 +14,24 @@
     /* サブタイトル */
     font-size: var(--small-heading2);
     font-weight: 700;
+    
+    /* ヨモギフォント */
+    font-family: "Yomogi", cursive;
+    font-style: normal;
+    /* font-size: 1.5em; */
 }
 
 .title {
     /* タイトルのh1サイズを小さく調整 */
     --stack-space: 0.2em;
+
+  /* ヨモギフォント */
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
+  /* font-size: 1.5em; */
+
+
 }
 
 .publish {

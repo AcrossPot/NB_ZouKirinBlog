@@ -25,7 +25,7 @@ export default function Category ({ name,posts }) {
     return (
         <Container>
             <Meta pageTitle={name} pageDesc={`${name}に関する記事`} />
-            <PostHeader title={name} subtitle="Blog Category" />
+            <PostHeader title={name} subtitle="たびにっき カテゴリー" />
             <Posts posts={posts} />
         </Container>
     )

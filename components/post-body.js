@@ -5,7 +5,8 @@ import styles from 'styles/post-body.module.css'
 
 export default function PostBody ({ children }) {
     return (
-        <div className={styles.stack}>
+        // 日記本文
+        <div className={styles.stack} style={{ fontFamily: '"Yomogi", cursive',fontWeight: 'bold',fontSize: '1.4em',color: '#6A5329'}}>
             { children }
         </div>
     )
