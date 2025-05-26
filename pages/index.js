@@ -48,6 +48,13 @@ export default function Home({ posts }) {
 // propsとしてblogコンポーネント（ページコンポーネント）に渡す
 
 export async function getStaticProps() {
+
+    //臨時確認用で追加
+    console.log(process.env.SERVICE_DOMAIN)//V確認で追加１
+    console.log(process.env.API_KEY)//V確認で追加２
+
+
+
     // トップページに最新記事を(4)記事表示させる
     const posts = await getAllPosts(4)
 

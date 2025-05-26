@@ -8,22 +8,22 @@
 # 左上歯車＞APIキー＞の、マスキングされているAPIキー（コピペボタン有り）
 # ダブルクォート不要
 
-# API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxx
-# エビブログ
-API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+#####API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # サービスドメイン、サービスID、microCMSのIDにあたる。左上に記載のやつ
 # ダブルクォート不要
-# SERVICE_DOMAIN=xxxxxxxxxxxxxxxxxxxxxxxxxxx
-# エビブログ
-SERVICE_DOMAIN=xxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+#####SERVICE_DOMAIN=xxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # 上記設定２つは、api.jsに渡される
 
 
 # pages/api/revalidate.jsで使用する。
 # On-demand ISR用
-SECRET_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxx
+#####SECRET_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Googleアナリティクス用
-NEXT_PUBLIC_GA_ID =xxxxxxxxxxxxxxxxxxxxxxxxxxx
+#####NEXT_PUBLIC_GA_ID =xxxxxxxxxxxxxxxxxxxxxxxxxxx
